@@ -49,8 +49,9 @@ Study these when you are comfortable reading multiple systems:
 
 - `07_Game_Save_Load_Player_Profile_Settings`
 - `10_Advanced_Skill_Tree_Progression_Unlock_System`
+- `12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System`
 
-Goal: understand how player data is serialized, loaded, validated, and connected to progression rules.
+Goal: understand how player data is serialized, loaded, validated, connected to progression rules, and how spawned gameplay objects can be reused safely.
 
 ## Stage 5 - Expert
 
@@ -66,5 +67,6 @@ Goal: understand how larger game systems can communicate through events, and how
 - Add a new weapon to the shooter folder.
 - Add a stamina cost to the combo tutorial.
 - Add a new skill prerequisite to the skill tree.
+- Increase the projectile pool size and compare active object counts.
 - Add a new event type for quest progress.
 - Add one self check for any new shared rule.

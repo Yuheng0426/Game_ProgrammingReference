@@ -1,6 +1,7 @@
 #include "07_Game_Save_Load_Player_Profile_Settings/SaveLoadDemo.h"
 
 #include <algorithm>
+#include <cstddef>
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -32,6 +33,46 @@ namespace game_ref
             return output.str();
         }
 
+        bool TryParseInt(const std::string& text, int& output)
+        {
+            try
+            {
+                std::size_t parsedCharacters = 0;
+                const int value = std::stoi(text, &parsedCharacters);
+                if (parsedCharacters != text.size())
+                {
+                    return false;
+                }
+
+                output = value;
+                return true;
+            }
+            catch (...)
+            {
+                return false;
+            }
+        }
+
+        bool TryParseFloat(const std::string& text, float& output)
+        {
+            try
+            {
+                std::size_t parsedCharacters = 0;
+                const float value = std::stof(text, &parsedCharacters);
+                if (parsedCharacters != text.size())
+                {
+                    return false;
+                }
+
+                output = value;
+                return true;
+            }
+            catch (...)
+            {
+                return false;
+            }
+        }
+
         void ApplyProfileValue(PlayerProfile& profile, const std::string& key, const std::string& value)
         {
             if (key == "playerName")
@@ -44,15 +85,27 @@ namespace game_ref
             }
             else if (key == "level")
             {
-                profile.level = std::max(1, std::stoi(value));
+                int parsedLevel = profile.level;
+                if (TryParseInt(value, parsedLevel))
+                {
+                    profile.level = std::max(1, parsedLevel);
+                }
             }
             else if (key == "experience")
             {
-                profile.experience = std::max(0, std::stoi(value));
+                int parsedExperience = profile.experience;
+                if (TryParseInt(value, parsedExperience))
+                {
+                    profile.experience = std::max(0, parsedExperience);
+                }
             }
             else if (key == "musicVolume")
             {
-                profile.musicVolume = std::max(0.0f, std::min(1.0f, std::stof(value)));
+                float parsedVolume = profile.musicVolume;
+                if (TryParseFloat(value, parsedVolume))
+                {
+                    profile.musicVolume = std::max(0.0f, std::min(1.0f, parsedVolume));
+                }
             }
             else if (key == "invertCameraY")
             {

@@ -5,6 +5,7 @@
 ![Visual Studio](https://img.shields.io/badge/IDE-Visual%20Studio-purple)
 ![Learning Project](https://img.shields.io/badge/purpose-gameplay%20learning-green)
 ![Beginner Friendly](https://img.shields.io/badge/path-beginner%20to%20expert-brightgreen)
+![CMake Build](https://github.com/Yuheng0426/Game_ProgrammingReference/actions/workflows/cmake.yml/badge.svg)
 
 A practical C++ reference project for learning common gameplay systems used in shooter games, soulslike games, action RPGs, and general real-time games.
 
@@ -25,7 +26,7 @@ Recommended order:
 
 ## Repository Tags
 
-`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `combat-system` `hitbox` `skill-tree` `save-system` `event-bus` `learning-project`
+`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `combat-system` `hitbox` `skill-tree` `object-pool` `save-system` `event-bus` `learning-project`
 
 ## Folder Guide
 
@@ -46,6 +47,7 @@ Every major folder name describes the game system inside it. This is intentional
 | `09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial` | Intermediate tutorial for active frames, hitboxes, hurtboxes, and one-hit-per-target attack rules. |
 | `10_Advanced_Skill_Tree_Progression_Unlock_System` | Advanced tutorial for skill requirements, prerequisites, points, and progression unlocks. |
 | `11_Expert_Gameplay_Event_Bus_Achievement_System` | Expert tutorial for event-driven gameplay communication and achievement unlocks. |
+| `12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System` | Advanced tutorial for object pooling, projectile reuse, enemy spawning, and active object tracking. |
 | `99_Project_Self_Checks_For_Game_Systems` | Lightweight self checks for core shared gameplay systems. |
 
 ## Learning Path
@@ -55,7 +57,7 @@ Every major folder name describes the game system inside it. This is intentional
 | Beginner | `01`, `08` | Understand loops, input, movement, camera follow, and simple collision. |
 | Core Gameplay | `02`, `03`, `04` | Learn shooter, soulslike, and action RPG gameplay rules. |
 | Intermediate | `05`, `06`, `09` | Learn AI states, lock-on targeting, combo logic, and melee frame data. |
-| Advanced | `07`, `10` | Learn persistence, player profiles, progression, and skill tree unlock rules. |
+| Advanced | `07`, `10`, `12` | Learn persistence, player profiles, progression, skill tree unlock rules, object pools, and spawn systems. |
 | Expert | `11`, `99` | Learn event-driven system communication and self-checking core logic. |
 
 ## Build With CMake
@@ -76,6 +78,8 @@ Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `
 - The demos are deterministic, so the output is stable and easy to compare while learning.
 - The code avoids engine-specific APIs so the gameplay ideas stay portable.
 - The examples favor clarity over cleverness. Each system is small enough to read in one sitting.
+- GitHub Actions runs the CMake build and demo on Windows.
+- `CONTRIBUTING.md` explains how to add new lesson folders cleanly.
 
 ## Current Gameplay Systems
 
@@ -90,6 +94,7 @@ Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `
 - Intermediate hitbox, hurtbox, and frame data tutorial.
 - Advanced skill tree and progression unlock tutorial.
 - Expert gameplay event bus and achievement tutorial.
+- Advanced object pool, projectile reuse, and enemy spawn tutorial.
 - Lightweight runtime self checks for shared systems.
 
 ## Suggested Next Steps

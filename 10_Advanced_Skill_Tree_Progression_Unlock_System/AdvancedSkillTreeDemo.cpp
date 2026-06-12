@@ -33,7 +33,8 @@ namespace game_ref
             {
                 for (SkillDefinition& definition : definitions)
                 {
-                    skills.emplace(definition.id, std::move(definition));
+                    const std::string skillId = definition.id;
+                    skills.emplace(skillId, std::move(definition));
                 }
             }
 

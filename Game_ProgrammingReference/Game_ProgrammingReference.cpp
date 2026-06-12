@@ -11,6 +11,7 @@
 #include "09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial/IntermediateHitboxDemo.h"
 #include "10_Advanced_Skill_Tree_Progression_Unlock_System/AdvancedSkillTreeDemo.h"
 #include "11_Expert_Gameplay_Event_Bus_Achievement_System/ExpertEventBusDemo.h"
+#include "12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System/ObjectPoolSpawnDemo.h"
 #include "99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.h"
 
 int main()
@@ -29,6 +30,7 @@ int main()
     game_ref::RunIntermediateHitboxDemo();
     game_ref::RunAdvancedSkillTreeDemo();
     game_ref::RunExpertEventBusDemo();
+    game_ref::RunObjectPoolSpawnDemo();
     game_ref::RunSelfCheckDemo();
 
     std::cout << "All reference demos completed.\n";

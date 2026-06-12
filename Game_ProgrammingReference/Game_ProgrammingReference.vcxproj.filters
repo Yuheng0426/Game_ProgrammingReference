@@ -46,6 +46,9 @@
     <Filter Include="源文件\11 Expert Gameplay Event Bus Achievement System">
       <UniqueIdentifier>{6FB388D8-2F63-4798-A5D1-399698A0624C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\12 Advanced Object Pool Projectile Enemy Spawn System">
+      <UniqueIdentifier>{9239E571-918F-45A4-85D4-CB77C55CF77A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\99 Project Self Checks For Game Systems">
       <UniqueIdentifier>{9DA2DCE0-F4E3-4647-96CD-6044502D6C71}</UniqueIdentifier>
     </Filter>
@@ -87,6 +90,9 @@
     <ClCompile Include="..\11_Expert_Gameplay_Event_Bus_Achievement_System\ExpertEventBusDemo.cpp">
       <Filter>源文件\11 Expert Gameplay Event Bus Achievement System</Filter>
     </ClCompile>
+    <ClCompile Include="..\12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System\ObjectPoolSpawnDemo.cpp">
+      <Filter>源文件\12 Advanced Object Pool Projectile Enemy Spawn System</Filter>
+    </ClCompile>
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
     </ClCompile>
@@ -127,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="..\11_Expert_Gameplay_Event_Bus_Achievement_System\ExpertEventBusDemo.h">
       <Filter>源文件\11 Expert Gameplay Event Bus Achievement System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System\ObjectPoolSpawnDemo.h">
+      <Filter>源文件\12 Advanced Object Pool Projectile Enemy Spawn System</Filter>
     </ClInclude>
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>

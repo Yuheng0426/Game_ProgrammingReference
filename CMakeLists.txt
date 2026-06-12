@@ -15,6 +15,7 @@ add_executable(Game_ProgrammingReference
     09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial/IntermediateHitboxDemo.cpp
     10_Advanced_Skill_Tree_Progression_Unlock_System/AdvancedSkillTreeDemo.cpp
     11_Expert_Gameplay_Event_Bus_Achievement_System/ExpertEventBusDemo.cpp
+    12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System/ObjectPoolSpawnDemo.cpp
     99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.cpp
 )
 
