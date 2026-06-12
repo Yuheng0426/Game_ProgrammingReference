@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\01 Game Loop Input Collision">
+      <UniqueIdentifier>{795F95D7-F67E-45BB-92E9-7EBCA3449211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\02 Shooter Weapon Bullet System">
+      <UniqueIdentifier>{94D6AE40-F883-474E-9EBD-CC5F7D3A1296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\03 Soulslike Stamina Dodge Parry Combat">
+      <UniqueIdentifier>{0257D0AC-CB31-42EE-92D7-C13075B1DA91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\04 Action RPG Ability Inventory Quest">
+      <UniqueIdentifier>{108E18E7-6B8E-460B-9D2E-A8DC6F3BB6D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Common Game Code">
+      <UniqueIdentifier>{949BD027-03C1-44B6-9D80-A69E8978FD1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\01_Game_Loop_Input_Collision\GameLoopDemo.cpp">
+      <Filter>源文件\01 Game Loop Input Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\02_Shooter_Weapon_Bullet_System\ShooterDemo.cpp">
+      <Filter>源文件\02 Shooter Weapon Bullet System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\03_Soulslike_Stamina_Dodge_Parry_Combat\SoulslikeDemo.cpp">
+      <Filter>源文件\03 Soulslike Stamina Dodge Parry Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\04_Action_RPG_Ability_Inventory_Quest\ActionRPGDemo.cpp">
+      <Filter>源文件\04 Action RPG Ability Inventory Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_ProgrammingReference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\01_Game_Loop_Input_Collision\GameLoopDemo.h">
+      <Filter>源文件\01 Game Loop Input Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\02_Shooter_Weapon_Bullet_System\ShooterDemo.h">
+      <Filter>源文件\02 Shooter Weapon Bullet System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\03_Soulslike_Stamina_Dodge_Parry_Combat\SoulslikeDemo.h">
+      <Filter>源文件\03 Soulslike Stamina Dodge Parry Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\04_Action_RPG_Ability_Inventory_Quest\ActionRPGDemo.h">
+      <Filter>源文件\04 Action RPG Ability Inventory Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common_Game_Code\Gameplay\CooldownTimer.h">
+      <Filter>头文件\Common Game Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common_Game_Code\Gameplay\HealthComponent.h">
+      <Filter>头文件\Common Game Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common_Game_Code\Gameplay\ResourcePool.h">
+      <Filter>头文件\Common Game Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common_Game_Code\Math\Vector2.h">
+      <Filter>头文件\Common Game Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

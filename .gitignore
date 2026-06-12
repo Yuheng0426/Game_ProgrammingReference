@@ -1,0 +1,23 @@
+# Build outputs
+build/
+out/
+x64/
+Win32/
+Debug/
+Release/
+
+# Visual Studio local files
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Temporary files
+*.log
+*.tmp
