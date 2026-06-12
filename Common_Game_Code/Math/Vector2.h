@@ -1,5 +1,13 @@
 #pragma once
 
+// Small 2D vector helper used by many lessons.
+//
+// Real engines usually provide math libraries already, but this project keeps a
+// tiny Vector2 type so every example can build with only standard C++.
+// The class is intentionally simple: it teaches the operations gameplay code
+// commonly needs, such as movement addition, scalar speed, distance checks, and
+// safe normalization.
+
 #include <cmath>
 
 namespace game_ref

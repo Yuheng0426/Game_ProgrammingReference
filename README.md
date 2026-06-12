@@ -81,6 +81,7 @@ Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `
 ## Learning Notes
 
 - All code comments are written in English for an international GitHub audience.
+- Each `.cpp` and `.h` file now includes teaching comments that explain the purpose of the lesson, the data structures, and the main gameplay decisions.
 - The demos are deterministic, so the output is stable and easy to compare while learning.
 - The code avoids engine-specific APIs so the gameplay ideas stay portable.
 - The examples favor clarity over cleverness. Each system is small enough to read in one sitting.

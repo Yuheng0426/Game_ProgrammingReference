@@ -1,5 +1,12 @@
 #include "03_Soulslike_Stamina_Dodge_Parry_Combat/SoulslikeDemo.h"
 
+// Soulslike lesson: stamina, dodge invincibility, parry windows, and stagger.
+//
+// The key teaching point is timing. The dodge animation, invincibility window,
+// parry animation, and parry success window are not the same duration. Separating
+// those timers makes combat easier to tune and avoids confusing "always safe"
+// defensive moves.
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -22,6 +29,8 @@ namespace game_ref
 
         struct Fighter
         {
+            // A Fighter owns only combat state needed by this lesson.
+            // Animation, input devices, and rendering are deliberately excluded.
             std::string name;
             HealthComponent health{ 100 };
             ResourcePool stamina{ 100.0f, 18.0f };

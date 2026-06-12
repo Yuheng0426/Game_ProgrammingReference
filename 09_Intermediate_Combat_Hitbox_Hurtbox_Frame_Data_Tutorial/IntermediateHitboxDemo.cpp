@@ -1,5 +1,15 @@
 #include "09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial/IntermediateHitboxDemo.h"
 
+// Intermediate combat lesson: hitboxes, hurtboxes, and frame data.
+//
+// Frame data splits an attack into startup, active, and recovery:
+// Startup: the attack is preparing and should not hit yet.
+// Active: the hitbox can overlap a hurtbox and apply damage.
+// Recovery: the attack is ending and usually cannot be canceled freely.
+//
+// This simple model teaches why action games feel fair: players can learn when
+// an attack is dangerous and when it is punishable.
+
 #include <iostream>
 #include <string>
 #include <unordered_set>
@@ -19,6 +29,7 @@ namespace game_ref
 
         struct FrameData
         {
+            // Frames are integers here because many combat games tune attacks in frame counts.
             int startupFrames = 0;
             int activeFrames = 0;
             int recoveryFrames = 0;
@@ -26,6 +37,7 @@ namespace game_ref
 
         struct AttackInstance
         {
+            // alreadyHitTargets prevents one active attack from damaging the same target every frame.
             std::string name;
             FrameData frameData;
             Box localHitbox;

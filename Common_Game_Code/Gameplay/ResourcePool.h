@@ -1,5 +1,11 @@
 #pragma once
 
+// Generic recoverable resource pool.
+//
+// Stamina, mana, energy, posture, and heat meters often share the same behavior:
+// they have a maximum value, can be spent, and recover over time. This helper
+// lets lessons reuse that idea without duplicating the same code in every folder.
+
 #include <algorithm>
 
 namespace game_ref

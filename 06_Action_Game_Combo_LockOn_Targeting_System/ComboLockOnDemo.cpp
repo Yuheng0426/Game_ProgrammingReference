@@ -1,5 +1,11 @@
 #include "06_Action_Game_Combo_LockOn_Targeting_System/ComboLockOnDemo.h"
 
+// Action combat lesson: combo steps and lock-on scoring.
+//
+// The combo controller teaches timed input windows. The lock-on selector teaches
+// how games often score targets using both distance and facing direction, instead
+// of blindly selecting the closest enemy.
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -22,6 +28,7 @@ namespace game_ref
 
         struct ComboStep
         {
+            // Each combo step can map to a different animation, damage value, and input window.
             std::string animationName;
             int damage = 0;
             float inputWindowSeconds = 0.0f;

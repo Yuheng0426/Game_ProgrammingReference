@@ -1,5 +1,12 @@
 #include "13_Expert_Behavior_Tree_Boss_AI_Phase_System/BossBehaviorTreeDemo.h"
 
+// Expert AI lesson: behavior tree boss logic.
+//
+// A behavior tree is a decision structure made from small nodes. Selectors choose
+// the first child that can run. Sequences require all children to succeed. Action
+// nodes perform actual gameplay work. This style is useful when boss behavior is
+// too complex for a single flat enum state.
+
 #include <functional>
 #include <iostream>
 #include <memory>
@@ -24,6 +31,8 @@ namespace game_ref
 
         struct BossBlackboard
         {
+            // The blackboard is shared memory for behavior tree nodes.
+            // Nodes read facts from it and write decisions back to it.
             Vector2 bossPosition;
             Vector2 playerPosition;
             HealthComponent bossHealth{ 300 };
@@ -36,6 +45,8 @@ namespace game_ref
         class BehaviorNode
         {
         public:
+            // Every behavior tree node exposes the same Tick function, which lets
+            // composite nodes treat actions, selectors, and sequences uniformly.
             virtual ~BehaviorNode() = default;
             virtual BehaviorResult Tick(BossBlackboard& blackboard, float deltaSeconds) = 0;
         };

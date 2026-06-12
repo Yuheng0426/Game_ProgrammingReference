@@ -1,5 +1,11 @@
 #include "99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.h"
 
+// Project self-check lesson.
+//
+// A learning repository benefits from fast checks that run with the normal demo.
+// If someone changes Vector2, HealthComponent, CooldownTimer, or ResourcePool,
+// these checks catch obvious broken behavior before the examples become confusing.
+
 #include <cmath>
 #include <iostream>
 #include <stdexcept>
@@ -16,6 +22,7 @@ namespace game_ref
     {
         void Require(bool condition, const std::string& message, int& passedChecks)
         {
+            // Throwing stops the demo immediately, which makes a failed assumption hard to miss.
             if (!condition)
             {
                 throw std::runtime_error("Self check failed: " + message);

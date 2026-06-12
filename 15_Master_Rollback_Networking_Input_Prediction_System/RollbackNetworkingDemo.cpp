@@ -1,5 +1,12 @@
 #include "15_Master_Rollback_Networking_Input_Prediction_System/RollbackNetworkingDemo.h"
 
+// Master networking lesson: rollback prediction.
+//
+// The client predicts movement immediately so controls feel responsive. Later,
+// when the server sends an authoritative past state, the client rolls back to
+// that state and replays saved local inputs. This demo keeps the simulation tiny
+// so the correction process is visible.
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -11,6 +18,7 @@ namespace game_ref
     {
         struct NetworkInput
         {
+            // Network inputs are stored per frame so they can be replayed after rollback.
             int frame = 0;
             int moveX = 0;
             bool dashPressed = false;
@@ -18,6 +26,7 @@ namespace game_ref
 
         struct PlayerSnapshot
         {
+            // Snapshots capture enough state to rewind and rebuild the future.
             int frame = 0;
             int positionX = 0;
             int stamina = 100;
@@ -25,6 +34,8 @@ namespace game_ref
 
         struct PredictionBuffer
         {
+            // Inputs and snapshots are both needed: inputs rebuild future frames,
+            // snapshots let us restore an older point in time.
             std::vector<NetworkInput> inputs;
             std::vector<PlayerSnapshot> snapshots;
         };

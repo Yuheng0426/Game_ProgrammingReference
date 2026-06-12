@@ -1,5 +1,11 @@
 #pragma once
 
+// Reusable health component for players, enemies, bosses, and targets.
+//
+// This class clamps damage and healing so callers cannot accidentally create
+// negative health or heal above the maximum. Many lessons use this helper to
+// keep combat code focused on gameplay rules instead of repeated safety checks.
+
 #include <algorithm>
 
 namespace game_ref

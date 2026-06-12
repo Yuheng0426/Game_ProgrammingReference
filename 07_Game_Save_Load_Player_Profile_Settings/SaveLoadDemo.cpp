@@ -1,5 +1,12 @@
 #include "07_Game_Save_Load_Player_Profile_Settings/SaveLoadDemo.h"
 
+// Save/load lesson: serialize player profile data and read it back safely.
+//
+// Real games often use JSON, binary save files, cloud storage, or platform save
+// APIs. This example starts with a tiny key-value format because it makes the
+// core problem visible: save data is external input, so loading code must be
+// defensive and should not crash when values are malformed.
+
 #include <algorithm>
 #include <cstddef>
 #include <iostream>
@@ -12,6 +19,8 @@ namespace game_ref
     {
         struct PlayerProfile
         {
+            // A profile combines progression data and user settings.
+            // In a larger game these might be split into different save sections.
             std::string playerName = "Player";
             std::string checkpointName = "Start";
             int level = 1;

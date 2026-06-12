@@ -1,3 +1,14 @@
+// Main entry point for the whole learning project.
+//
+// This file intentionally calls every lesson demo in order, from beginner topics
+// to grandmaster topics. A learner can run the program once and see a stable,
+// deterministic output sample for every gameplay system in the repository.
+//
+// When adding a new lesson:
+// 1. Add its header include here.
+// 2. Call its Run...Demo function in the correct learning order.
+// 3. Add the .cpp file to CMakeLists.txt and the Visual Studio project.
+
 #include <iostream>
 
 #include "01_Game_Loop_Input_Collision/GameLoopDemo.h"

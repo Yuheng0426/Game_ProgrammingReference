@@ -1,5 +1,11 @@
 #include "10_Advanced_Skill_Tree_Progression_Unlock_System/AdvancedSkillTreeDemo.h"
 
+// Advanced progression lesson: skill definitions, prerequisites, and unlock rules.
+//
+// The central teaching point is validation. A skill should unlock only through
+// one rule path, so the UI, save loader, debug tools, and gameplay rewards all
+// agree on what "can unlock" means.
+
 #include <iostream>
 #include <string>
 #include <unordered_map>
@@ -12,6 +18,7 @@ namespace game_ref
     {
         struct SkillDefinition
         {
+            // SkillDefinition is static data: what the skill is and what it requires.
             std::string id;
             std::string displayName;
             int requiredLevel = 1;
@@ -21,6 +28,7 @@ namespace game_ref
 
         struct PlayerProgression
         {
+            // PlayerProgression is runtime data: what this player currently owns.
             int level = 1;
             int availableSkillPoints = 0;
             std::unordered_map<std::string, bool> unlockedSkills;

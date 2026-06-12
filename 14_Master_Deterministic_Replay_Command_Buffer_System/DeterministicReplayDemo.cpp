@@ -1,5 +1,12 @@
 #include "14_Master_Deterministic_Replay_Command_Buffer_System/DeterministicReplayDemo.h"
 
+// Master systems lesson: deterministic replay.
+//
+// Deterministic replay means the same input commands produce the same final state.
+// This is powerful for bug reproduction, automated tests, speedrun tools, and
+// rollback networking. The example uses integer-like rules and a checksum so the
+// result is easy to verify.
+
 #include <algorithm>
 #include <cstddef>
 #include <cmath>
@@ -23,6 +30,8 @@ namespace game_ref
 
         struct GameplayCommand
         {
+            // A command records "what happened" and "which frame it happened on".
+            // This is more replay-friendly than storing raw keyboard state directly.
             int frame = 0;
             CommandType type = CommandType::MoveRight;
         };
@@ -94,6 +103,7 @@ namespace game_ref
         {
             ReplayWorld world;
             std::vector<GameplayCommand> sortedCommands = commandBuffer;
+            // Sorting makes the replay robust even if commands arrive or are recorded out of order.
             std::stable_sort(sortedCommands.begin(), sortedCommands.end(), [](const GameplayCommand& a, const GameplayCommand& b)
             {
                 return a.frame < b.frame;

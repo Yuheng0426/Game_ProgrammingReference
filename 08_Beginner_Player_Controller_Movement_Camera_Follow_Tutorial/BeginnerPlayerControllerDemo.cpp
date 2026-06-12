@@ -1,5 +1,11 @@
 #include "08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial/BeginnerPlayerControllerDemo.h"
 
+// Beginner controller lesson.
+//
+// This file teaches the difference between desired velocity and current velocity.
+// Instead of instantly snapping to full speed, the player accelerates toward the
+// target velocity. That small detail makes movement feel smoother in many games.
+
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -18,6 +24,8 @@ namespace game_ref
 
         struct PlayerController
         {
+            // Position is where the player is. Velocity is how fast the player is moving now.
+            // Keeping both values makes acceleration and deceleration possible.
             Vector2 position;
             Vector2 velocity;
             float walkSpeed = 3.0f;

@@ -1,5 +1,11 @@
 #include "12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System/ObjectPoolSpawnDemo.h"
 
+// Advanced performance lesson: object pooling.
+//
+// Spawning bullets, enemies, pickups, and effects can create many short-lived
+// objects. Allocating and freeing memory every frame can cause performance spikes.
+// A pool pre-allocates a fixed number of objects and reuses inactive entries.
+
 #include <cstddef>
 #include <iostream>
 #include <string>
@@ -33,10 +39,14 @@ namespace game_ref
         class ObjectPool
         {
         public:
+            // Capacity is fixed for this teaching example so learners can clearly
+            // see what happens when the pool is full.
             explicit ObjectPool(std::size_t capacity) : objects(capacity) {}
 
             T* Acquire()
             {
+                // Linear search is simple and readable. Larger games might keep
+                // a free-list for faster acquire/release behavior.
                 for (T& object : objects)
                 {
                     if (!object.active)

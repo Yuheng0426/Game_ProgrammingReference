@@ -1,5 +1,12 @@
 #include "11_Expert_Gameplay_Event_Bus_Achievement_System/ExpertEventBusDemo.h"
 
+// Expert architecture lesson: gameplay event bus and achievements.
+//
+// Without an event bus, combat code might directly call quest code, UI code,
+// audio code, analytics code, and achievement code. That coupling becomes hard
+// to maintain. This example broadcasts gameplay facts, and interested systems
+// decide how to react.
+
 #include <functional>
 #include <iostream>
 #include <string>
@@ -20,6 +27,8 @@ namespace game_ref
 
         struct GameplayEvent
         {
+            // One event object carries a small fact that happened in gameplay.
+            // The name field is intentionally generic for readable demo output.
             GameplayEventType type;
             std::string name;
             int amount = 1;
@@ -28,6 +37,8 @@ namespace game_ref
         class GameplayEventBus
         {
         public:
+            // Listener functions are stored by event type. In a production game,
+            // listener lifetime and unsubscribe rules need more careful ownership.
             using Listener = std::function<void(const GameplayEvent&)>;
 
             void Subscribe(GameplayEventType type, Listener listener)

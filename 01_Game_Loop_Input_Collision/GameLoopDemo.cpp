@@ -1,5 +1,14 @@
 #include "01_Game_Loop_Input_Collision/GameLoopDemo.h"
 
+// Beginner lesson: game loop, input, movement, and collision.
+//
+// This file demonstrates the core shape of a real-time game update:
+// 1. Read input for the current frame.
+// 2. Convert input into movement.
+// 3. Update the player's collider.
+// 4. Check collision against hazards.
+// 5. Print deterministic output so learners can compare behavior after edits.
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -13,12 +22,15 @@ namespace game_ref
     {
         struct InputCommand
         {
+            // The move axis is kept as data instead of reading keyboard input directly.
+            // That makes this demo deterministic and easier to test.
             Vector2 moveDirection;
             bool sprint = false;
         };
 
         struct CircleCollider
         {
+            // A circle collider is enough to teach overlap checks without complex geometry.
             Vector2 center;
             float radius = 0.5f;
         };

@@ -1,5 +1,11 @@
 #include "02_Shooter_Weapon_Bullet_System/ShooterDemo.h"
 
+// Shooter lesson: weapon rules, magazine ammo, reload timing, bullets, and hits.
+//
+// The important teaching idea is that "fire a weapon" is not just spawning a
+// bullet. A robust weapon usually checks cooldown, reload state, ammo count,
+// muzzle position, aim direction, projectile speed, damage, and later hit logic.
+
 #include <iostream>
 #include <string>
 #include <utility>
@@ -15,6 +21,8 @@ namespace game_ref
     {
         struct WeaponConfig
         {
+            // Tuning data is grouped here so balance changes do not require
+            // rewriting the Weapon class logic.
             std::string name;
             int magazineSize = 6;
             int damage = 25;
@@ -25,6 +33,7 @@ namespace game_ref
 
         struct Bullet
         {
+            // A bullet stores only the data needed by the projectile update system.
             Vector2 position;
             Vector2 velocity;
             int damage = 0;
@@ -33,6 +42,8 @@ namespace game_ref
 
         struct Target
         {
+            // Targets are intentionally simple: position + hit radius + health.
+            // This keeps the example close to what real hit detection needs.
             std::string name;
             Vector2 position;
             float hitRadius = 0.6f;

@@ -1,5 +1,12 @@
 #include "16_Grandmaster_ECS_Data_Oriented_Gameplay_System/ECSDemo.h"
 
+// Grandmaster architecture lesson: Entity Component System (ECS).
+//
+// Instead of large inheritance hierarchies such as Player -> Character -> Actor,
+// this file stores data in component collections and runs systems over matching
+// components. This is a simplified teaching version, but it introduces the same
+// mental model used by many high-performance gameplay architectures.
+
 #include <algorithm>
 #include <cstdint>
 #include <iostream>
@@ -17,6 +24,8 @@ namespace game_ref
 
         struct PositionComponent
         {
+            // Components should usually store data, not behavior.
+            // Systems decide how the data changes.
             Vector2 value;
         };
 
@@ -33,6 +42,8 @@ namespace game_ref
 
         struct DamageEvent
         {
+            // Events let systems request work without immediately mutating every component.
+            // This makes update order more explicit and easier to debug.
             Entity target = 0;
             int amount = 0;
             std::string source;
@@ -41,6 +52,8 @@ namespace game_ref
         class ECSWorld
         {
         public:
+            // Entity creation returns an ID. The ID becomes meaningful only when
+            // components are attached to it.
             Entity CreateEntity()
             {
                 const Entity entity = nextEntity;

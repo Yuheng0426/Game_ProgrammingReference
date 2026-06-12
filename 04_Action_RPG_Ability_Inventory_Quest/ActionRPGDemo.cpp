@@ -1,5 +1,11 @@
 #include "04_Action_RPG_Ability_Inventory_Quest/ActionRPGDemo.h"
 
+// Action RPG lesson: ability casting, cooldowns, mana, items, quests, and rewards.
+//
+// This example teaches how many RPG systems touch each other:
+// abilities damage enemies, enemy defeat grants experience, quest progress reacts
+// to kills, and inventory items can restore health after taking damage.
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -14,6 +20,8 @@ namespace game_ref
     {
         struct Ability
         {
+            // Ability data is separated from cast validation so designers can tune
+            // damage, cost, and cooldown without changing CastAbility.
             std::string name;
             int damage = 0;
             float manaCost = 0.0f;
@@ -30,6 +38,7 @@ namespace game_ref
 
         struct Quest
         {
+            // This quest tracks one simple objective: defeat a required number of enemies.
             std::string name;
             int requiredKills = 0;
             int currentKills = 0;

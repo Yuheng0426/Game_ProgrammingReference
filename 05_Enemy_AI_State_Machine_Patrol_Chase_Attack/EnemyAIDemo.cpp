@@ -1,5 +1,13 @@
 #include "05_Enemy_AI_State_Machine_Patrol_Chase_Attack/EnemyAIDemo.h"
 
+// Intermediate AI lesson: a readable finite state machine.
+//
+// The enemy has four states:
+// Patrol: follow waypoints.
+// Chase: move toward a visible player.
+// Attack: damage the player when close enough and off cooldown.
+// ReturnToPost: go back to spawn when the player is lost.
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -29,6 +37,8 @@ namespace game_ref
 
         struct EnemyAI
         {
+            // AI tuning values are kept on the enemy so designers can make
+            // different guards faster, slower, more aggressive, or more aware.
             std::string name;
             Vector2 spawnPosition;
             Vector2 position;

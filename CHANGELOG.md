@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6.1
+
+- Expanded English teaching comments across the current C++ source files.
+- Added clearer file-level lesson notes for beginner, intermediate, advanced, expert, master, and grandmaster examples.
+- Added more comments explaining why key gameplay structures and systems are designed the way they are.
+
 ## v0.6.0
 
 - Added `16_Grandmaster_ECS_Data_Oriented_Gameplay_System`.
