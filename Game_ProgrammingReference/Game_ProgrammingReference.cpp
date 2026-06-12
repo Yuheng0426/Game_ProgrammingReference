@@ -14,6 +14,7 @@
 #include "12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System/ObjectPoolSpawnDemo.h"
 #include "13_Expert_Behavior_Tree_Boss_AI_Phase_System/BossBehaviorTreeDemo.h"
 #include "14_Master_Deterministic_Replay_Command_Buffer_System/DeterministicReplayDemo.h"
+#include "15_Master_Rollback_Networking_Input_Prediction_System/RollbackNetworkingDemo.h"
 #include "99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.h"
 
 int main()
@@ -35,6 +36,7 @@ int main()
     game_ref::RunObjectPoolSpawnDemo();
     game_ref::RunBossBehaviorTreeDemo();
     game_ref::RunDeterministicReplayDemo();
+    game_ref::RunRollbackNetworkingDemo();
     game_ref::RunSelfCheckDemo();
 
     std::cout << "All reference demos completed.\n";

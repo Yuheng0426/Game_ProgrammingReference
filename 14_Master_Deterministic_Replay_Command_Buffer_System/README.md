@@ -5,6 +5,7 @@ This folder teaches how to record gameplay commands and replay them deterministi
 ## What You Learn
 
 - Store input commands with frame numbers.
+- Sort command buffers before replay so out-of-order input is still safe.
 - Simulate gameplay from a command buffer.
 - Generate a simple checksum for replay validation.
 - Use deterministic rules that avoid hidden random behavior.

@@ -18,6 +18,7 @@ add_executable(Game_ProgrammingReference
     12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System/ObjectPoolSpawnDemo.cpp
     13_Expert_Behavior_Tree_Boss_AI_Phase_System/BossBehaviorTreeDemo.cpp
     14_Master_Deterministic_Replay_Command_Buffer_System/DeterministicReplayDemo.cpp
+    15_Master_Rollback_Networking_Input_Prediction_System/RollbackNetworkingDemo.cpp
     99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.cpp
 )
 

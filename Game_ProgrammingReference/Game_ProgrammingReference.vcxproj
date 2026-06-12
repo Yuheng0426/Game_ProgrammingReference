@@ -141,6 +141,7 @@
     <ClCompile Include="..\12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System\ObjectPoolSpawnDemo.cpp" />
     <ClCompile Include="..\13_Expert_Behavior_Tree_Boss_AI_Phase_System\BossBehaviorTreeDemo.cpp" />
     <ClCompile Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.cpp" />
+    <ClCompile Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.cpp" />
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp" />
     <ClCompile Include="Game_ProgrammingReference.cpp" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <ClInclude Include="..\12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System\ObjectPoolSpawnDemo.h" />
     <ClInclude Include="..\13_Expert_Behavior_Tree_Boss_AI_Phase_System\BossBehaviorTreeDemo.h" />
     <ClInclude Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.h" />
+    <ClInclude Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.h" />
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h" />
     <ClInclude Include="..\Common_Game_Code\Gameplay\CooldownTimer.h" />
     <ClInclude Include="..\Common_Game_Code\Gameplay\HealthComponent.h" />

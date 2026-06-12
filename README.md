@@ -26,7 +26,7 @@ Recommended order:
 
 ## Repository Tags
 
-`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `behavior-tree` `combat-system` `hitbox` `skill-tree` `object-pool` `replay-system` `save-system` `event-bus` `learning-project`
+`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `behavior-tree` `combat-system` `hitbox` `skill-tree` `object-pool` `replay-system` `rollback-netcode` `save-system` `event-bus` `learning-project`
 
 ## Folder Guide
 
@@ -50,6 +50,7 @@ Every major folder name describes the game system inside it. This is intentional
 | `12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System` | Advanced tutorial for object pooling, projectile reuse, enemy spawning, and active object tracking. |
 | `13_Expert_Behavior_Tree_Boss_AI_Phase_System` | Expert tutorial for behavior tree nodes, boss decisions, cooldowns, and phase changes. |
 | `14_Master_Deterministic_Replay_Command_Buffer_System` | Master tutorial for command buffers, deterministic replay, and checksum validation. |
+| `15_Master_Rollback_Networking_Input_Prediction_System` | Master tutorial for client prediction, server correction, rollback, and replaying saved inputs. |
 | `99_Project_Self_Checks_For_Game_Systems` | Lightweight self checks for core shared gameplay systems. |
 
 ## Learning Path
@@ -61,7 +62,7 @@ Every major folder name describes the game system inside it. This is intentional
 | Intermediate | `05`, `06`, `09` | Learn AI states, lock-on targeting, combo logic, and melee frame data. |
 | Advanced | `07`, `10`, `12` | Learn persistence, player profiles, progression, skill tree unlock rules, object pools, and spawn systems. |
 | Expert | `11`, `13`, `99` | Learn event-driven communication, boss behavior trees, phase logic, and self-checking core rules. |
-| Master | `14` | Learn deterministic command replay, reproducible simulation, and checksum validation. |
+| Master | `14`, `15` | Learn deterministic command replay, reproducible simulation, checksum validation, client prediction, rollback, and input replay. |
 
 ## Build With CMake
 
@@ -100,6 +101,7 @@ Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `
 - Advanced object pool, projectile reuse, and enemy spawn tutorial.
 - Expert boss behavior tree and phase system tutorial.
 - Master deterministic replay and command buffer tutorial.
+- Master rollback networking and input prediction tutorial.
 - Lightweight runtime self checks for shared systems.
 
 ## Suggested Next Steps

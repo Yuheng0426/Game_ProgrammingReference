@@ -68,8 +68,9 @@ Goal: understand how larger game systems can communicate through events, how bos
 Study this after the expert examples:
 
 - `14_Master_Deterministic_Replay_Command_Buffer_System`
+- `15_Master_Rollback_Networking_Input_Prediction_System`
 
-Goal: understand command buffers, deterministic simulation, replay validation, and the foundation used by automated gameplay tests and rollback networking.
+Goal: understand command buffers, deterministic simulation, replay validation, client prediction, rollback correction, and the foundation used by automated gameplay tests and rollback networking.
 
 ## Suggested Practice
 
@@ -80,4 +81,5 @@ Goal: understand command buffers, deterministic simulation, replay validation, a
 - Add a new event type for quest progress.
 - Add a new boss behavior tree branch for a ranged attack.
 - Add a new replay command and confirm both checksums still match.
+- Change the server collision frame in the rollback tutorial and observe the correction.
 - Add one self check for any new shared rule.

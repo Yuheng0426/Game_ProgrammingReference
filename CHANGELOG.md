@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.0
+
+- Added `15_Master_Rollback_Networking_Input_Prediction_System`.
+- Improved deterministic replay by sorting command buffers before simulation.
+- Updated README and roadmap with rollback networking topics.
+
 ## v0.4.0
 
 - Added `13_Expert_Behavior_Tree_Boss_AI_Phase_System`.

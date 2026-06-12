@@ -93,13 +93,19 @@ namespace game_ref
         ReplayWorld SimulateReplay(const std::vector<GameplayCommand>& commandBuffer, int maxFrame)
         {
             ReplayWorld world;
+            std::vector<GameplayCommand> sortedCommands = commandBuffer;
+            std::stable_sort(sortedCommands.begin(), sortedCommands.end(), [](const GameplayCommand& a, const GameplayCommand& b)
+            {
+                return a.frame < b.frame;
+            });
+
             std::size_t nextCommand = 0;
 
             for (int frame = 0; frame <= maxFrame; ++frame)
             {
-                while (nextCommand < commandBuffer.size() && commandBuffer[nextCommand].frame == frame)
+                while (nextCommand < sortedCommands.size() && sortedCommands[nextCommand].frame == frame)
                 {
-                    ApplyCommand(world, commandBuffer[nextCommand].type);
+                    ApplyCommand(world, sortedCommands[nextCommand].type);
                     ++nextCommand;
                 }
             }
@@ -123,8 +129,8 @@ namespace game_ref
 
         const std::vector<GameplayCommand> commandBuffer = {
             { 0, CommandType::MoveRight },
-            { 1, CommandType::MoveRight },
             { 2, CommandType::Dash },
+            { 1, CommandType::MoveRight },
             { 3, CommandType::Attack },
             { 4, CommandType::MoveUp },
             { 5, CommandType::Attack }

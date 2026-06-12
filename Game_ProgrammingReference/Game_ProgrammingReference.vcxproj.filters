@@ -55,6 +55,9 @@
     <Filter Include="源文件\14 Master Deterministic Replay Command Buffer System">
       <UniqueIdentifier>{8629B9D7-7A8D-446F-A348-77DA3DC68AC1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\15 Master Rollback Networking Input Prediction System">
+      <UniqueIdentifier>{231F5368-6268-4DA9-92CD-CC33FEB61217}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\99 Project Self Checks For Game Systems">
       <UniqueIdentifier>{9DA2DCE0-F4E3-4647-96CD-6044502D6C71}</UniqueIdentifier>
     </Filter>
@@ -105,6 +108,9 @@
     <ClCompile Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.cpp">
       <Filter>源文件\14 Master Deterministic Replay Command Buffer System</Filter>
     </ClCompile>
+    <ClCompile Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.cpp">
+      <Filter>源文件\15 Master Rollback Networking Input Prediction System</Filter>
+    </ClCompile>
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
     </ClCompile>
@@ -154,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.h">
       <Filter>源文件\14 Master Deterministic Replay Command Buffer System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.h">
+      <Filter>源文件\15 Master Rollback Networking Input Prediction System</Filter>
     </ClInclude>
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
