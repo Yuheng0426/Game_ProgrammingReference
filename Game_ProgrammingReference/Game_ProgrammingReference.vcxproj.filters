@@ -49,6 +49,12 @@
     <Filter Include="源文件\12 Advanced Object Pool Projectile Enemy Spawn System">
       <UniqueIdentifier>{9239E571-918F-45A4-85D4-CB77C55CF77A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\13 Expert Behavior Tree Boss AI Phase System">
+      <UniqueIdentifier>{32815E78-7334-49E7-B98E-3D22E8F22F61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\14 Master Deterministic Replay Command Buffer System">
+      <UniqueIdentifier>{8629B9D7-7A8D-446F-A348-77DA3DC68AC1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\99 Project Self Checks For Game Systems">
       <UniqueIdentifier>{9DA2DCE0-F4E3-4647-96CD-6044502D6C71}</UniqueIdentifier>
     </Filter>
@@ -93,6 +99,12 @@
     <ClCompile Include="..\12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System\ObjectPoolSpawnDemo.cpp">
       <Filter>源文件\12 Advanced Object Pool Projectile Enemy Spawn System</Filter>
     </ClCompile>
+    <ClCompile Include="..\13_Expert_Behavior_Tree_Boss_AI_Phase_System\BossBehaviorTreeDemo.cpp">
+      <Filter>源文件\13 Expert Behavior Tree Boss AI Phase System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.cpp">
+      <Filter>源文件\14 Master Deterministic Replay Command Buffer System</Filter>
+    </ClCompile>
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
     </ClCompile>
@@ -136,6 +148,12 @@
     </ClInclude>
     <ClInclude Include="..\12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System\ObjectPoolSpawnDemo.h">
       <Filter>源文件\12 Advanced Object Pool Projectile Enemy Spawn System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\13_Expert_Behavior_Tree_Boss_AI_Phase_System\BossBehaviorTreeDemo.h">
+      <Filter>源文件\13 Expert Behavior Tree Boss AI Phase System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.h">
+      <Filter>源文件\14 Master Deterministic Replay Command Buffer System</Filter>
     </ClInclude>
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>

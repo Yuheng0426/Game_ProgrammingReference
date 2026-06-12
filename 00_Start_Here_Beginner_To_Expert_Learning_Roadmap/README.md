@@ -58,9 +58,18 @@ Goal: understand how player data is serialized, loaded, validated, connected to 
 Study these last:
 
 - `11_Expert_Gameplay_Event_Bus_Achievement_System`
+- `13_Expert_Behavior_Tree_Boss_AI_Phase_System`
 - `99_Project_Self_Checks_For_Game_Systems`
 
-Goal: understand how larger game systems can communicate through events, and how lightweight checks can catch broken assumptions early.
+Goal: understand how larger game systems can communicate through events, how boss AI can be composed from behavior tree nodes, and how lightweight checks can catch broken assumptions early.
+
+## Stage 6 - Master
+
+Study this after the expert examples:
+
+- `14_Master_Deterministic_Replay_Command_Buffer_System`
+
+Goal: understand command buffers, deterministic simulation, replay validation, and the foundation used by automated gameplay tests and rollback networking.
 
 ## Suggested Practice
 
@@ -69,4 +78,6 @@ Goal: understand how larger game systems can communicate through events, and how
 - Add a new skill prerequisite to the skill tree.
 - Increase the projectile pool size and compare active object counts.
 - Add a new event type for quest progress.
+- Add a new boss behavior tree branch for a ranged attack.
+- Add a new replay command and confirm both checksums still match.
 - Add one self check for any new shared rule.
