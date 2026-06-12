@@ -58,6 +58,9 @@
     <Filter Include="源文件\15 Master Rollback Networking Input Prediction System">
       <UniqueIdentifier>{231F5368-6268-4DA9-92CD-CC33FEB61217}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\16 Grandmaster ECS Data Oriented Gameplay System">
+      <UniqueIdentifier>{04527C59-F2B5-4F5A-8E45-AB14F7278505}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\99 Project Self Checks For Game Systems">
       <UniqueIdentifier>{9DA2DCE0-F4E3-4647-96CD-6044502D6C71}</UniqueIdentifier>
     </Filter>
@@ -111,6 +114,9 @@
     <ClCompile Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.cpp">
       <Filter>源文件\15 Master Rollback Networking Input Prediction System</Filter>
     </ClCompile>
+    <ClCompile Include="..\16_Grandmaster_ECS_Data_Oriented_Gameplay_System\ECSDemo.cpp">
+      <Filter>源文件\16 Grandmaster ECS Data Oriented Gameplay System</Filter>
+    </ClCompile>
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
     </ClCompile>
@@ -163,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.h">
       <Filter>源文件\15 Master Rollback Networking Input Prediction System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\16_Grandmaster_ECS_Data_Oriented_Gameplay_System\ECSDemo.h">
+      <Filter>源文件\16 Grandmaster ECS Data Oriented Gameplay System</Filter>
     </ClInclude>
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>

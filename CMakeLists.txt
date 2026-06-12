@@ -19,6 +19,7 @@ add_executable(Game_ProgrammingReference
     13_Expert_Behavior_Tree_Boss_AI_Phase_System/BossBehaviorTreeDemo.cpp
     14_Master_Deterministic_Replay_Command_Buffer_System/DeterministicReplayDemo.cpp
     15_Master_Rollback_Networking_Input_Prediction_System/RollbackNetworkingDemo.cpp
+    16_Grandmaster_ECS_Data_Oriented_Gameplay_System/ECSDemo.cpp
     99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.cpp
 )
 

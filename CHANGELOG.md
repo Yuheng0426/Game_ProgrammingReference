@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6.0
+
+- Added `16_Grandmaster_ECS_Data_Oriented_Gameplay_System`.
+- Added a Grandmaster learning stage for ECS and data-oriented gameplay.
+- Updated README and roadmap with ECS topics.
+
 ## v0.5.0
 
 - Added `15_Master_Rollback_Networking_Input_Prediction_System`.

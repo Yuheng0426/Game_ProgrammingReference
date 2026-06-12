@@ -26,7 +26,7 @@ Recommended order:
 
 ## Repository Tags
 
-`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `behavior-tree` `combat-system` `hitbox` `skill-tree` `object-pool` `replay-system` `rollback-netcode` `save-system` `event-bus` `learning-project`
+`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `behavior-tree` `combat-system` `ecs` `data-oriented-design` `hitbox` `skill-tree` `object-pool` `replay-system` `rollback-netcode` `save-system` `event-bus` `learning-project`
 
 ## Folder Guide
 
@@ -51,6 +51,7 @@ Every major folder name describes the game system inside it. This is intentional
 | `13_Expert_Behavior_Tree_Boss_AI_Phase_System` | Expert tutorial for behavior tree nodes, boss decisions, cooldowns, and phase changes. |
 | `14_Master_Deterministic_Replay_Command_Buffer_System` | Master tutorial for command buffers, deterministic replay, and checksum validation. |
 | `15_Master_Rollback_Networking_Input_Prediction_System` | Master tutorial for client prediction, server correction, rollback, and replaying saved inputs. |
+| `16_Grandmaster_ECS_Data_Oriented_Gameplay_System` | Grandmaster tutorial for entities, components, systems, damage events, and data-oriented cleanup. |
 | `99_Project_Self_Checks_For_Game_Systems` | Lightweight self checks for core shared gameplay systems. |
 
 ## Learning Path
@@ -63,6 +64,7 @@ Every major folder name describes the game system inside it. This is intentional
 | Advanced | `07`, `10`, `12` | Learn persistence, player profiles, progression, skill tree unlock rules, object pools, and spawn systems. |
 | Expert | `11`, `13`, `99` | Learn event-driven communication, boss behavior trees, phase logic, and self-checking core rules. |
 | Master | `14`, `15` | Learn deterministic command replay, reproducible simulation, checksum validation, client prediction, rollback, and input replay. |
+| Grandmaster | `16` | Learn ECS-style data separation, system passes, event queues, and data-oriented entity cleanup. |
 
 ## Build With CMake
 
@@ -102,6 +104,7 @@ Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `
 - Expert boss behavior tree and phase system tutorial.
 - Master deterministic replay and command buffer tutorial.
 - Master rollback networking and input prediction tutorial.
+- Grandmaster ECS and data-oriented gameplay tutorial.
 - Lightweight runtime self checks for shared systems.
 
 ## Suggested Next Steps
