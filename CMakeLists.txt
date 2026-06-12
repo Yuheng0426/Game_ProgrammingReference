@@ -11,6 +11,10 @@ add_executable(Game_ProgrammingReference
     05_Enemy_AI_State_Machine_Patrol_Chase_Attack/EnemyAIDemo.cpp
     06_Action_Game_Combo_LockOn_Targeting_System/ComboLockOnDemo.cpp
     07_Game_Save_Load_Player_Profile_Settings/SaveLoadDemo.cpp
+    08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial/BeginnerPlayerControllerDemo.cpp
+    09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial/IntermediateHitboxDemo.cpp
+    10_Advanced_Skill_Tree_Progression_Unlock_System/AdvancedSkillTreeDemo.cpp
+    11_Expert_Gameplay_Event_Bus_Achievement_System/ExpertEventBusDemo.cpp
     99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.cpp
 )
 

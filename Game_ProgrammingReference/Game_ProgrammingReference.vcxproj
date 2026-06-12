@@ -134,6 +134,10 @@
     <ClCompile Include="..\05_Enemy_AI_State_Machine_Patrol_Chase_Attack\EnemyAIDemo.cpp" />
     <ClCompile Include="..\06_Action_Game_Combo_LockOn_Targeting_System\ComboLockOnDemo.cpp" />
     <ClCompile Include="..\07_Game_Save_Load_Player_Profile_Settings\SaveLoadDemo.cpp" />
+    <ClCompile Include="..\08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial\BeginnerPlayerControllerDemo.cpp" />
+    <ClCompile Include="..\09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial\IntermediateHitboxDemo.cpp" />
+    <ClCompile Include="..\10_Advanced_Skill_Tree_Progression_Unlock_System\AdvancedSkillTreeDemo.cpp" />
+    <ClCompile Include="..\11_Expert_Gameplay_Event_Bus_Achievement_System\ExpertEventBusDemo.cpp" />
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp" />
     <ClCompile Include="Game_ProgrammingReference.cpp" />
   </ItemGroup>
@@ -145,6 +149,10 @@
     <ClInclude Include="..\05_Enemy_AI_State_Machine_Patrol_Chase_Attack\EnemyAIDemo.h" />
     <ClInclude Include="..\06_Action_Game_Combo_LockOn_Targeting_System\ComboLockOnDemo.h" />
     <ClInclude Include="..\07_Game_Save_Load_Player_Profile_Settings\SaveLoadDemo.h" />
+    <ClInclude Include="..\08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial\BeginnerPlayerControllerDemo.h" />
+    <ClInclude Include="..\09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial\IntermediateHitboxDemo.h" />
+    <ClInclude Include="..\10_Advanced_Skill_Tree_Progression_Unlock_System\AdvancedSkillTreeDemo.h" />
+    <ClInclude Include="..\11_Expert_Gameplay_Event_Bus_Achievement_System\ExpertEventBusDemo.h" />
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h" />
     <ClInclude Include="..\Common_Game_Code\Gameplay\CooldownTimer.h" />
     <ClInclude Include="..\Common_Game_Code\Gameplay\HealthComponent.h" />

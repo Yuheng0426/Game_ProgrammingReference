@@ -34,6 +34,18 @@
     <Filter Include="源文件\07 Game Save Load Player Profile Settings">
       <UniqueIdentifier>{3263B976-9359-455B-887E-BB47F26E277C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\08 Beginner Player Controller Movement Camera Follow Tutorial">
+      <UniqueIdentifier>{2DE62B19-2591-4CE2-928B-4F3E53D21BD4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\09 Intermediate Combat Hitbox Hurtbox Frame Data Tutorial">
+      <UniqueIdentifier>{FB72AC7A-D303-4615-8EC6-35559F73480A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\10 Advanced Skill Tree Progression Unlock System">
+      <UniqueIdentifier>{CE3BA63F-878E-40B8-9854-4830997B8657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\11 Expert Gameplay Event Bus Achievement System">
+      <UniqueIdentifier>{6FB388D8-2F63-4798-A5D1-399698A0624C}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\99 Project Self Checks For Game Systems">
       <UniqueIdentifier>{9DA2DCE0-F4E3-4647-96CD-6044502D6C71}</UniqueIdentifier>
     </Filter>
@@ -63,6 +75,18 @@
     <ClCompile Include="..\07_Game_Save_Load_Player_Profile_Settings\SaveLoadDemo.cpp">
       <Filter>源文件\07 Game Save Load Player Profile Settings</Filter>
     </ClCompile>
+    <ClCompile Include="..\08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial\BeginnerPlayerControllerDemo.cpp">
+      <Filter>源文件\08 Beginner Player Controller Movement Camera Follow Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial\IntermediateHitboxDemo.cpp">
+      <Filter>源文件\09 Intermediate Combat Hitbox Hurtbox Frame Data Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\10_Advanced_Skill_Tree_Progression_Unlock_System\AdvancedSkillTreeDemo.cpp">
+      <Filter>源文件\10 Advanced Skill Tree Progression Unlock System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\11_Expert_Gameplay_Event_Bus_Achievement_System\ExpertEventBusDemo.cpp">
+      <Filter>源文件\11 Expert Gameplay Event Bus Achievement System</Filter>
+    </ClCompile>
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
     </ClCompile>
@@ -91,6 +115,18 @@
     </ClInclude>
     <ClInclude Include="..\07_Game_Save_Load_Player_Profile_Settings\SaveLoadDemo.h">
       <Filter>源文件\07 Game Save Load Player Profile Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial\BeginnerPlayerControllerDemo.h">
+      <Filter>源文件\08 Beginner Player Controller Movement Camera Follow Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\09_Intermediate_Combat_Hitbox_Hurtbox_Frame_Data_Tutorial\IntermediateHitboxDemo.h">
+      <Filter>源文件\09 Intermediate Combat Hitbox Hurtbox Frame Data Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\10_Advanced_Skill_Tree_Progression_Unlock_System\AdvancedSkillTreeDemo.h">
+      <Filter>源文件\10 Advanced Skill Tree Progression Unlock System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\11_Expert_Gameplay_Event_Bus_Achievement_System\ExpertEventBusDemo.h">
+      <Filter>源文件\11 Expert Gameplay Event Bus Achievement System</Filter>
     </ClInclude>
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h">
       <Filter>源文件\99 Project Self Checks For Game Systems</Filter>
