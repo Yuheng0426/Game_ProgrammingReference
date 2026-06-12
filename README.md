@@ -1,16 +1,33 @@
 # C++ Game Programming Reference
 
-这个项目用于学习 C++ 游戏开发中的常见基础系统。每个大文件夹都是一个独立主题，文件夹名直接说明代码内容，方便以后放到 GitHub 给其他人阅读、运行和参考。
+![C++17](https://img.shields.io/badge/C%2B%2B-17-blue)
+![CMake](https://img.shields.io/badge/build-CMake-informational)
+![Visual Studio](https://img.shields.io/badge/IDE-Visual%20Studio-purple)
+![Learning Project](https://img.shields.io/badge/purpose-gameplay%20learning-green)
 
-代码目前使用标准 C++17 和控制台模拟，不依赖 Unreal、Unity、SDL 或其他大型库。这样做的目的是先把玩法系统的核心逻辑讲清楚，例如游戏循环、碰撞、武器、子弹、耐力、翻滚、招架、技能、背包和任务。
+A practical C++ reference project for learning common gameplay systems used in shooter games, soulslike games, action RPGs, and general real-time games.
+
+The project uses standard C++17 console demos first. This keeps the gameplay logic easy to read, easy to debug, and easy to move later into Unreal Engine, Unity native plugins, Raylib, SDL, or a custom engine.
+
+## Repository Tags
+
+`cpp` `game-development` `gameplay-programming` `shooter` `soulslike` `action-rpg` `ai-state-machine` `combat-system` `save-system` `learning-project`
 
 ## Folder Guide
 
-- `Common_Game_Code`：可复用的基础代码，例如向量、生命值、冷却计时器、资源池。
-- `01_Game_Loop_Input_Collision`：游戏循环、输入命令、移动、简单碰撞检测。
-- `02_Shooter_Weapon_Bullet_System`：射击游戏的武器、弹药、换弹、子弹飞行和命中。
-- `03_Soulslike_Stamina_Dodge_Parry_Combat`：魂类游戏常见的耐力、翻滚无敌帧、招架窗口、硬直。
-- `04_Action_RPG_Ability_Inventory_Quest`：动作 RPG 常见的技能、蓝量、背包、药水、任务和升级。
+Every major folder name describes the game system inside it. This is intentional so beginners can browse the repository without guessing what each folder means.
+
+| Folder | Content |
+| --- | --- |
+| `Common_Game_Code` | Shared gameplay helpers such as vectors, health, cooldown timers, and resource pools. |
+| `01_Game_Loop_Input_Collision` | Fixed update style loop, scripted input, movement, and simple collision checks. |
+| `02_Shooter_Weapon_Bullet_System` | Weapon fire rules, magazine ammo, reload timing, bullet travel, and target hits. |
+| `03_Soulslike_Stamina_Dodge_Parry_Combat` | Stamina spending, dodge invincibility frames, parry windows, damage, and stagger state. |
+| `04_Action_RPG_Ability_Inventory_Quest` | Abilities, mana costs, cooldowns, potions, inventory items, quests, rewards, and leveling. |
+| `05_Enemy_AI_State_Machine_Patrol_Chase_Attack` | Enemy AI states for patrolling, seeing the player, chasing, attacking, and returning to post. |
+| `06_Action_Game_Combo_LockOn_Targeting_System` | Combo attack chains, input windows, target scoring, and lock-on target selection. |
+| `07_Game_Save_Load_Player_Profile_Settings` | Save/load logic for player profile data, checkpoint name, level, experience, and settings. |
+| `99_Project_Self_Checks_For_Game_Systems` | Lightweight self checks for core shared gameplay systems. |
 
 ## Build With CMake
 
@@ -20,16 +37,30 @@ cmake --build build --config Release
 .\build\Release\Game_ProgrammingReference.exe
 ```
 
-如果你使用 Visual Studio，也可以直接打开 `Game_ProgrammingReference.sln`，选择 `x64` 和 `Release` 或 `Debug` 后运行。
+## Build With Visual Studio
+
+Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `Release`.
 
 ## Learning Notes
 
-- All code comments are written in English so the repository is friendly for an international GitHub audience.
-- The examples are deterministic. They run the same way every time, which makes debugging and learning easier.
-- The code favors clear gameplay logic over engine-specific APIs. You can later move the same ideas into Unreal, Unity C++ plugins, SDL, Raylib, or a custom engine.
+- All code comments are written in English for an international GitHub audience.
+- The demos are deterministic, so the output is stable and easy to compare while learning.
+- The code avoids engine-specific APIs so the gameplay ideas stay portable.
+- The examples favor clarity over cleverness. Each system is small enough to read in one sitting.
+
+## Current Gameplay Systems
+
+- Core game loop, input, movement, and collision.
+- Shooter weapon, ammo, reload, bullet, and hit detection logic.
+- Soulslike stamina, dodge, parry, stagger, and damage rules.
+- Action RPG abilities, inventory, quest progress, rewards, and leveling.
+- Enemy AI patrol, chase, attack, and return behavior.
+- Action game combo chains and lock-on targeting.
+- Save/load profile and settings serialization.
+- Lightweight runtime self checks for shared systems.
 
 ## Suggested Next Steps
 
-1. Add simple unit tests for each gameplay system.
-2. Add a Raylib or SDL visual version after the logic is stable.
-3. Split each demo into smaller lessons if you want a tutorial-style GitHub repository.
+1. Add unit tests with a small C++ test framework.
+2. Add a Raylib or SDL visual version after the console logic is stable.
+3. Add more folders for camera, animation events, hit boxes, skill trees, loot tables, and dialogue.
