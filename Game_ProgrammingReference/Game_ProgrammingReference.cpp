@@ -27,6 +27,7 @@
 #include "14_Master_Deterministic_Replay_Command_Buffer_System/DeterministicReplayDemo.h"
 #include "15_Master_Rollback_Networking_Input_Prediction_System/RollbackNetworkingDemo.h"
 #include "16_Grandmaster_ECS_Data_Oriented_Gameplay_System/ECSDemo.h"
+#include "17_Grandmaster_Data_Driven_Loot_Table_Difficulty_Scaling_System/LootTableDemo.h"
 #include "99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.h"
 
 int main()
@@ -50,6 +51,7 @@ int main()
     game_ref::RunDeterministicReplayDemo();
     game_ref::RunRollbackNetworkingDemo();
     game_ref::RunECSDemo();
+    game_ref::RunLootTableDemo();
     game_ref::RunSelfCheckDemo();
 
     std::cout << "All reference demos completed.\n";

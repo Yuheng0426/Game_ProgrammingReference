@@ -4,6 +4,8 @@ Welcome to the guided learning path for this C++ gameplay programming reference.
 
 This repository is built so you can learn one system at a time. Start with movement and collision, then move into combat, AI, progression, saving, and event-driven architecture.
 
+Current teaching material version: `v1.0.0`.
+
 ## How To Study
 
 1. Build and run the program once.
@@ -77,8 +79,19 @@ Goal: understand command buffers, deterministic simulation, replay validation, c
 Study this after the master examples:
 
 - `16_Grandmaster_ECS_Data_Oriented_Gameplay_System`
+- `17_Grandmaster_Data_Driven_Loot_Table_Difficulty_Scaling_System`
 
-Goal: understand data-oriented gameplay, entity IDs, separated component storage, system passes, event queues, and cleanup after simulation.
+Goal: understand data-oriented gameplay, entity IDs, separated component storage, system passes, event queues, cleanup after simulation, data-driven loot, difficulty scaling, and pity protection.
+
+## Stage 8 - Production Guides
+
+Study these when you start moving from console lessons into real game projects:
+
+- `Game_Development_Guides`
+- `Unreal_Engine_5_Troubleshooting_Guide`
+- `Unity_Troubleshooting_Guide`
+
+Goal: understand practical project structure, common engine problems, and how to fix issues that appear during real Unreal Engine 5 and Unity development.
 
 ## Suggested Practice
 
@@ -91,4 +104,6 @@ Goal: understand data-oriented gameplay, entity IDs, separated component storage
 - Add a new replay command and confirm both checksums still match.
 - Change the server collision frame in the rollback tutorial and observe the correction.
 - Add a new component to the ECS tutorial and write one system that processes it.
+- Add a Legendary drop to the loot table tutorial.
+- Pick one UE5 or Unity troubleshooting item and write a tiny reproduction checklist.
 - Add one self check for any new shared rule.

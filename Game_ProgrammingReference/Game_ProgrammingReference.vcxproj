@@ -143,6 +143,7 @@
     <ClCompile Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.cpp" />
     <ClCompile Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.cpp" />
     <ClCompile Include="..\16_Grandmaster_ECS_Data_Oriented_Gameplay_System\ECSDemo.cpp" />
+    <ClCompile Include="..\17_Grandmaster_Data_Driven_Loot_Table_Difficulty_Scaling_System\LootTableDemo.cpp" />
     <ClCompile Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.cpp" />
     <ClCompile Include="Game_ProgrammingReference.cpp" />
   </ItemGroup>
@@ -163,6 +164,7 @@
     <ClInclude Include="..\14_Master_Deterministic_Replay_Command_Buffer_System\DeterministicReplayDemo.h" />
     <ClInclude Include="..\15_Master_Rollback_Networking_Input_Prediction_System\RollbackNetworkingDemo.h" />
     <ClInclude Include="..\16_Grandmaster_ECS_Data_Oriented_Gameplay_System\ECSDemo.h" />
+    <ClInclude Include="..\17_Grandmaster_Data_Driven_Loot_Table_Difficulty_Scaling_System\LootTableDemo.h" />
     <ClInclude Include="..\99_Project_Self_Checks_For_Game_Systems\SelfCheckDemo.h" />
     <ClInclude Include="..\Common_Game_Code\Gameplay\CooldownTimer.h" />
     <ClInclude Include="..\Common_Game_Code\Gameplay\HealthComponent.h" />

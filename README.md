@@ -5,11 +5,27 @@
 ![Visual Studio](https://img.shields.io/badge/IDE-Visual%20Studio-purple)
 ![Learning Project](https://img.shields.io/badge/purpose-gameplay%20learning-green)
 ![Beginner Friendly](https://img.shields.io/badge/path-beginner%20to%20expert-brightgreen)
+![Teaching Version](https://img.shields.io/badge/teaching%20version-v1.0.0-orange)
 ![CMake Build](https://github.com/Yuheng0426/Game_ProgrammingReference/actions/workflows/cmake.yml/badge.svg)
 
 A practical C++ reference project for learning common gameplay systems used in shooter games, soulslike games, action RPGs, and general real-time games.
 
 The project uses standard C++17 console demos first. This keeps the gameplay logic easy to read, easy to debug, and easy to move later into Unreal Engine, Unity native plugins, Raylib, SDL, or a custom engine.
+
+## Version Policy
+
+Current teaching material version: `v1.0.0`.
+
+All current lessons, guides, troubleshooting notes, and examples are treated as part of `v1.0.0`. Older `v0.x` development tags were internal growth milestones and have been consolidated into the first stable teaching release.
+
+Future versions should change only for major updates, such as:
+
+- A large new advanced gameplay system.
+- A major rewrite of the learning path.
+- A new engine integration track.
+- A significant tooling or testing upgrade.
+
+Small typo fixes, comment improvements, or minor wording changes do not need a new major teaching version.
 
 ## Start Here
 
@@ -26,7 +42,7 @@ Recommended order:
 
 ## Repository Tags
 
-`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `behavior-tree` `combat-system` `ecs` `data-oriented-design` `hitbox` `skill-tree` `object-pool` `replay-system` `rollback-netcode` `save-system` `event-bus` `learning-project`
+`cpp` `game-development` `gameplay-programming` `beginner-friendly` `shooter` `soulslike` `action-rpg` `ai-state-machine` `behavior-tree` `combat-system` `ecs` `data-oriented-design` `hitbox` `skill-tree` `loot-table` `object-pool` `replay-system` `rollback-netcode` `unreal-engine-5` `unity` `save-system` `event-bus` `learning-project`
 
 ## Folder Guide
 
@@ -52,6 +68,10 @@ Every major folder name describes the game system inside it. This is intentional
 | `14_Master_Deterministic_Replay_Command_Buffer_System` | Master tutorial for command buffers, deterministic replay, and checksum validation. |
 | `15_Master_Rollback_Networking_Input_Prediction_System` | Master tutorial for client prediction, server correction, rollback, and replaying saved inputs. |
 | `16_Grandmaster_ECS_Data_Oriented_Gameplay_System` | Grandmaster tutorial for entities, components, systems, damage events, and data-oriented cleanup. |
+| `17_Grandmaster_Data_Driven_Loot_Table_Difficulty_Scaling_System` | Grandmaster tutorial for weighted loot, difficulty scaling, deterministic random rolls, and pity protection. |
+| `Game_Development_Guides` | Practical production guidance for building game projects, vertical slices, debugging, and scope control. |
+| `Unreal_Engine_5_Troubleshooting_Guide` | UE5 problems and fixes for redirectors, Blueprints, C++ classes, packaging, and performance. |
+| `Unity_Troubleshooting_Guide` | Unity problems and fixes for missing scripts, `.meta` files, asmdefs, builds, and gameplay timing. |
 | `99_Project_Self_Checks_For_Game_Systems` | Lightweight self checks for core shared gameplay systems. |
 
 ## Learning Path
@@ -64,7 +84,8 @@ Every major folder name describes the game system inside it. This is intentional
 | Advanced | `07`, `10`, `12` | Learn persistence, player profiles, progression, skill tree unlock rules, object pools, and spawn systems. |
 | Expert | `11`, `13`, `99` | Learn event-driven communication, boss behavior trees, phase logic, and self-checking core rules. |
 | Master | `14`, `15` | Learn deterministic command replay, reproducible simulation, checksum validation, client prediction, rollback, and input replay. |
-| Grandmaster | `16` | Learn ECS-style data separation, system passes, event queues, and data-oriented entity cleanup. |
+| Grandmaster | `16`, `17` | Learn ECS-style data separation, system passes, event queues, data-oriented cleanup, loot tables, difficulty scaling, and pity logic. |
+| Production Guides | `Game_Development_Guides`, `Unreal_Engine_5_Troubleshooting_Guide`, `Unity_Troubleshooting_Guide` | Learn practical game production habits and common engine problem fixes. |
 
 ## Build With CMake
 
@@ -106,6 +127,10 @@ Open `Game_ProgrammingReference.sln`, choose `x64`, then run either `Debug` or `
 - Master deterministic replay and command buffer tutorial.
 - Master rollback networking and input prediction tutorial.
 - Grandmaster ECS and data-oriented gameplay tutorial.
+- Grandmaster data-driven loot table and difficulty scaling tutorial.
+- Game development production guide.
+- Unreal Engine 5 troubleshooting guide.
+- Unity troubleshooting guide.
 - Lightweight runtime self checks for shared systems.
 
 ## Suggested Next Steps

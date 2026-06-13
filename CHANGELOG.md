@@ -1,47 +1,41 @@
 # Changelog
 
-## v0.6.1
+## v1.0.0
 
-- Expanded English teaching comments across the current C++ source files.
-- Added clearer file-level lesson notes for beginner, intermediate, advanced, expert, master, and grandmaster examples.
-- Added more comments explaining why key gameplay structures and systems are designed the way they are.
+First stable teaching-material release.
 
-## v0.6.0
+This version consolidates all previous `v0.x` development milestones into one clear baseline. The complete current repository is considered `v1.0.0` learning material.
 
-- Added `16_Grandmaster_ECS_Data_Oriented_Gameplay_System`.
-- Added a Grandmaster learning stage for ECS and data-oriented gameplay.
-- Updated README and roadmap with ECS topics.
+Included content:
 
-## v0.5.0
+- Beginner to Grandmaster C++ gameplay programming path.
+- Shooter weapon, ammo, reload, bullet, and hit detection systems.
+- Soulslike stamina, dodge, parry, stagger, and damage rules.
+- Action RPG ability, inventory, quest, reward, and leveling systems.
+- Enemy AI state machine tutorial.
+- Combo and lock-on targeting tutorial.
+- Save/load player profile and settings tutorial.
+- Hitbox, hurtbox, and frame data tutorial.
+- Skill tree progression and unlock tutorial.
+- Gameplay event bus and achievement system tutorial.
+- Object pool, projectile, and enemy spawn tutorial.
+- Behavior tree boss AI and phase system tutorial.
+- Deterministic replay and command buffer tutorial.
+- Rollback networking and input prediction tutorial.
+- ECS and data-oriented gameplay tutorial.
+- Data-driven loot table, difficulty scaling, and pity protection tutorial.
+- Game development production guide.
+- Unreal Engine 5 troubleshooting guide.
+- Unity troubleshooting guide.
+- GitHub Actions CMake build check.
 
-- Added `15_Master_Rollback_Networking_Input_Prediction_System`.
-- Improved deterministic replay by sorting command buffers before simulation.
-- Updated README and roadmap with rollback networking topics.
+## Future Version Rule
 
-## v0.4.0
+Future versions should change only for major updates or powerful new features, such as:
 
-- Added `13_Expert_Behavior_Tree_Boss_AI_Phase_System`.
-- Added `14_Master_Deterministic_Replay_Command_Buffer_System`.
-- Updated the learning roadmap with Expert and Master stages.
-- Updated the main README with behavior tree and replay system topics.
+- A large new gameplay architecture track.
+- A real engine implementation track for Unreal Engine 5 or Unity.
+- A major testing/profiling/tooling upgrade.
+- A meaningful restructuring of the learning roadmap.
 
-## v0.3.0
-
-- Added `12_Advanced_Object_Pool_Projectile_Enemy_Spawn_System`.
-- Added GitHub Actions CMake build checks.
-- Added `CONTRIBUTING.md`.
-- Improved save parsing robustness.
-- Fixed a skill tree construction ordering issue.
-
-## v0.2.0
-
-- Added `00_Start_Here_Beginner_To_Expert_Learning_Roadmap`.
-- Added beginner player controller and camera follow tutorial.
-- Added intermediate hitbox, hurtbox, and frame data tutorial.
-- Added advanced skill tree tutorial.
-- Added expert gameplay event bus tutorial.
-
-## v0.1.0
-
-- Added the first gameplay reference systems.
-- Added shooter, soulslike, action RPG, AI, combo, save/load, and self-check examples.
+Minor typo fixes, comment edits, and small wording improvements can stay under the current teaching version.

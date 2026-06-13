@@ -10,6 +10,12 @@ Thanks for improving this gameplay programming reference.
 - Prefer clear gameplay logic over clever abstractions.
 - Name folders after the exact game system they teach.
 
+## Version Policy
+
+The current teaching material version is `v1.0.0`.
+
+Do not create a new version tag for every small edit. Use a new version only when the repository receives a major update, such as a large new gameplay system, a new engine-specific learning track, or a major restructuring of the teaching path.
+
 ## Folder Naming
 
 Use this pattern for new lesson folders:

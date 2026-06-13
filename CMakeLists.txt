@@ -20,6 +20,7 @@ add_executable(Game_ProgrammingReference
     14_Master_Deterministic_Replay_Command_Buffer_System/DeterministicReplayDemo.cpp
     15_Master_Rollback_Networking_Input_Prediction_System/RollbackNetworkingDemo.cpp
     16_Grandmaster_ECS_Data_Oriented_Gameplay_System/ECSDemo.cpp
+    17_Grandmaster_Data_Driven_Loot_Table_Difficulty_Scaling_System/LootTableDemo.cpp
     99_Project_Self_Checks_For_Game_Systems/SelfCheckDemo.cpp
 )
 
