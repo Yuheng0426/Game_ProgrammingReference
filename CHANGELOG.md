@@ -8,6 +8,8 @@ This version consolidates all previous `v0.x` development milestones into one cl
 
 Included content:
 
+- New beginner introduction folder with basic vocabulary and first-reading guidance.
+- More detailed beginner comments for the game loop, input, movement, collision, player controller, and camera follow tutorials.
 - Beginner to Grandmaster C++ gameplay programming path.
 - Shooter weapon, ammo, reload, bullet, and hit detection systems.
 - Soulslike stamina, dodge, parry, stagger, and damage rules.

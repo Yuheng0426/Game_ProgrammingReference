@@ -6,6 +6,8 @@ This repository is built so you can learn one system at a time. Start with movem
 
 Current teaching material version: `v1.0.0`.
 
+If you are new to programming or new to game programming, read `00_New_Beginner_Read_This_First` before this roadmap.
+
 ## How To Study
 
 1. Build and run the program once.
@@ -20,10 +22,11 @@ Current teaching material version: `v1.0.0`.
 
 Study these first:
 
+- `00_New_Beginner_Read_This_First`
 - `01_Game_Loop_Input_Collision`
 - `08_Beginner_Player_Controller_Movement_Camera_Follow_Tutorial`
 
-Goal: understand how a game updates every frame, reads input, moves a player, clamps positions, checks simple collision, and follows the player with a camera.
+Goal: learn basic vocabulary first, then understand how a game updates every frame, reads input, moves a player, clamps positions, checks simple collision, and follows the player with a camera.
 
 ## Stage 2 - Core Gameplay
 

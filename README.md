@@ -29,16 +29,21 @@ Small typo fixes, comment improvements, or minor wording changes do not need a n
 
 ## Start Here
 
-New learners should open `00_Start_Here_Beginner_To_Expert_Learning_Roadmap` first. It gives a clean path from basic movement to advanced gameplay architecture.
+New learners should open `00_New_Beginner_Read_This_First` first.
+
+That folder explains basic words such as frame, delta seconds, Vector2, position, velocity, collider, cooldown, and resource. It also explains which folders to read first and which advanced folders to ignore until later.
+
+After that, open `00_Start_Here_Beginner_To_Expert_Learning_Roadmap`. It gives a clean path from basic movement to advanced gameplay architecture.
 
 Recommended order:
 
-1. Read the roadmap.
-2. Run the console program once.
-3. Open one numbered folder at a time.
-4. Read the folder README.
-5. Read the `.cpp` file and follow the English comments.
-6. Change one value, rebuild, and observe the output.
+1. Read `00_New_Beginner_Read_This_First`.
+2. Read the roadmap.
+3. Run the console program once.
+4. Open one numbered folder at a time.
+5. Read the folder README.
+6. Read the `.cpp` file and follow the English comments.
+7. Change one value, rebuild, and observe the output.
 
 ## Repository Tags
 
@@ -50,6 +55,7 @@ Every major folder name describes the game system inside it. This is intentional
 
 | Folder | Content |
 | --- | --- |
+| `00_New_Beginner_Read_This_First` | Friendly beginner introduction, vocabulary, first reading order, and small practice tasks. |
 | `00_Start_Here_Beginner_To_Expert_Learning_Roadmap` | A guided learning path that explains what to study first and how each folder builds on the last. |
 | `Common_Game_Code` | Shared gameplay helpers such as vectors, health, cooldown timers, and resource pools. |
 | `01_Game_Loop_Input_Collision` | Fixed update style loop, scripted input, movement, and simple collision checks. |
